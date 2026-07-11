@@ -1,0 +1,20 @@
+{
+    "name": "ricfr/json-structure",
+    "description": "This Package validates Laravel Requests against the new JSON Structure Specification which provides easier verification, typing, modularity, and determinism. Please also see json-structure.org",
+    "type": "library",
+    "require": {
+        "json-structure/sdk": "^0.7.0"
+    },
+    "license": "GPL-3.0-or-later",
+    "autoload": {
+        "psr-4": {
+            "Ricfr\\JsonStructure\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ric16Fr",
+            "email": "ri.franke@proton.me"
+        }
+    ]
+}
