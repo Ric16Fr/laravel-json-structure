@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^8.5",
+        "php": "^8.3",
         "illuminate/support": "^12.0||^13.0",
         "json-structure/sdk": "^0.8.0"
     },
