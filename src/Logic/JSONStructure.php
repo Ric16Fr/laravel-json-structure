@@ -17,7 +17,7 @@ class JSONStructure
     private array $structure;
 
     /**
-     * @param array<string, mixed> $structure
+     * @param  array<string, mixed>  $structure
      */
     private function __construct(array $structure)
     {
@@ -29,7 +29,7 @@ class JSONStructure
      * in your client or reccieved by an external API Endpoint.
      * Validates that the files produces a correct Structure document before returning it.
      *
-     * @param array<string, mixed> $structure the JSONStructure defined in an array
+     * @param  array<string, mixed>  $structure  the JSONStructure defined in an array
      * @return JSONStructure JSONStructure to be used in verifying all further Request payloads of this type.
      *
      * @throws ValueError when the structure is not a valid JSON Structure document
@@ -52,7 +52,7 @@ class JSONStructure
      * Creates a JSON-Structure Definition from an JSON file. That is usually the case when its send by another developer.
      * Validates that the files produces a correct Structure document before returning it.
      *
-     * @param string $pathToFile the path to the JSON file with the structure
+     * @param  string  $pathToFile  the path to the JSON file with the structure
      * @return JSONStructure the structure to be used in verifying all further Request payloads of this type.
      *
      * @throws RuntimeException when the file cannot be read
@@ -83,8 +83,8 @@ class JSONStructure
     /**
      * Validates a reccieved JSON from a request against the JSONStructure created previously.
      *
-     * @param Request $instance the Laravel Request to be validated
-     * @param JSONStructure $structure the previously created Structure object
+     * @param  Request  $instance  the Laravel Request to be validated
+     * @param  JSONStructure  $structure  the previously created Structure object
      * @return array<int, ValidationError> validation errors, empty when the request satisfies the structure
      */
     public static function validateJSON(Request $instance, JSONStructure $structure): array
@@ -98,8 +98,8 @@ class JSONStructure
      * Validates a reccieved JSON from a request against an array containing the JSONStructure document on the fly. The Structure
      * document will NOT be validated here, so if the structure document is malformed, an Error will occour.
      *
-     * @param Request $instance the Laravel Request to be validated
-     * @param array<string, mixed> $structure an unchecked Structure object
+     * @param  Request  $instance  the Laravel Request to be validated
+     * @param  array<string, mixed>  $structure  an unchecked Structure object
      * @return array<int, ValidationError> validation errors, empty when the request satisfies the structure
      */
     public static function validateJSONWithUncheckedStructure(Request $instance, array $structure): array
