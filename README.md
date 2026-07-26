@@ -5,7 +5,7 @@
 <p align="center">
     <a href="https://packagist.org/packages/ricfr/json-structure"><img src="https://img.shields.io/packagist/v/ricfr/json-structure.svg?style=flat-square" alt="Packagist"></a>
     <a href="https://packagist.org/packages/ricfr/json-structure"><img src="https://img.shields.io/packagist/php-v/ricfr/json-structure.svg?style=flat-square" alt="PHP from Packagist"></a>
-    <a href="https://github.com/ricfr/json-structure/actions"><img alt="GitHub Workflow Status (main)" src="https://img.shields.io/github/actions/workflow/status/ricfr/json-structure/tests.yml?branch=main&label=Tests&style=flat-square"></a>
+     <a href="https://github.com/Ric16Fr/laravel-json-structure/actions"><img alt="GitHub Workflow Status (main)" src="https://img.shields.io/github/actions/workflow/status/ricfr/json-structure/actions/workflows/tests.yml?branch=main&label=Tests&style=flat-square"></a>
     <a href="https://packagist.org/packages/ricfr/json-structure"><img src="https://img.shields.io/packagist/dt/ricfr/json-structure.svg?style=flat-square" alt="Total Downloads"></a>
 </p>
 
